@@ -1,0 +1,101 @@
+
+
+  /* Navigation Bar */
+  .nav-link {
+    float: left;
+    color: white;
+}
+.brand-name{
+    color:white;
+}
+
+
+
+/*title*/
+.title-image{
+   width: 100%;
+}
+.title-intro{
+    text-align: center;
+    position: relative;
+    color: black;
+    font-weight: 900;
+    
+}
+.title-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 900;
+}
+.title-description{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*explination*/
+
+.sub-heading{
+    text-align:center;
+    padding: 5% 0;
+   
+}
+
+.feature-box{
+   display: table-row;
+   float: left;
+   width: 33%;
+   text-align: center;
+   padding-bottom: 10%;
+ 
+}
+
+
+/*options*/
+.option-image{
+    width: 15%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+
+
+
+  /*call to action*/
+
+  .subscribe{
+    text-align: center;
+}
+
+
+
+
+  /*footer*/
+
+
+
+  .footer{
+      text-align: center;
+  }
+
+  .social-medias{
+    margin: 20px 10px;
+  }
+
+
+
+  @media (max-width: 1028px){
+
+    #title{
+      text-align: center;
+    }
+    
+    .title-image{
+      position: static;
+    
+    }
+    
+    }
