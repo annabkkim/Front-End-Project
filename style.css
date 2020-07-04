@@ -57,19 +57,31 @@
 
 /*options*/
 .option-image{
-    width: 15%;
-    border-radius: 100%;
+    width: 20%;
+    border-radius: 50%;
     margin: 20px;
+  }
+
+  .item{
+    display: table-row;
+   float: left;
+   width: 33%;
+   text-align: center;
+   padding-bottom: 10%;
+ 
+  }
+
+  .option-header{
+    text-align: center;
   }
 
 
 
   /*call to action*/
 
-  .subscribe{
+  .sub-section{
     text-align: center;
-}
-
+  }
 
 
 
@@ -85,7 +97,7 @@
     margin: 20px 10px;
   }
 
-
+  /*media queries*/
 
   @media (max-width: 1028px){
 
@@ -99,3 +111,14 @@
     }
     
     }
+
+    @media only screen and (min-width: 600px) {
+
+      .feature-box, .item {
+          flex-direction: column; 
+      }
+     
+
+    }
+
+
