@@ -10,105 +10,147 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/d4ab900fb9.js" crossorigin="anonymous"></script>
 
-
 </head>
 
 <body>
    <!-- Nav Bar -->
-   <nav class= 'navbar navbar-light bg-dark'>
-<h2 class= 'brand-name'> Sweet Treats</h2>
+   <nav class='main-header'>
+<div class= 'brand-name'> <h3>SweetTreats</h3></div>
 
-    <ul class='right-nav'>
+    <ul class='nav-links'>
        
-            <a class='nav-link' href='#footer'>Contact</a>
-       
+          <li><a href='#footer'>Contact</a></li>
+            
+           <li><a href='#options'>Menu</a></li> 
       
-            <a class='nav-link' href='#footer'>Our Menu</a>
-      
-      
-            <a class='nav-link' href='#pricing'>Pricing</a>
+            <li><a href='#pricing'>Pricing</a></li>
+
+     
        
     </ul>
 
 
 </nav>
 
+<div class='grid'>
 <!-- title -->
-<div class='title-intro'>
+<section class='title-intro'>
 <h1 class= 'title-heading'> Satisfying Everyone's Sweet Tooth, One Recipie at a Time </h1>
-<p class='title-description'>Now offering Vegan & Dairy Free Reciepies!</p>
-
+<p class='title-description'>Now offering Vegan & Dairy Free Recipies!</p>
+<div>
 <img class="title-image" src="images/berries-cream.jpg">
 </div>
-<!-- explination -->
+</section>
 
-<div class= 'feature'>
-<h1 class='sub-heading'> Why Sweet Treats?</h1>
-    <div class= 'feature-box'>
-    <h3 class='feature-title'>Freshest Ingredients </h3>
-    <i class="fas fa-seedling"></i>
+
+
+<!-- explination -->
+<section class= 'feature'>
+<h2 class='sub-heading'> Why Sweet Treats?</h2>
+
+    <div class= 'feature-box col1'>
+      <i class="fas fa-seedling fa-3x icon"></i>
+    <h4 class='feature-title'>Freshest Ingredients </h4>
     <p>Locally-grown & fair trade</p>
     </div>
 
-    <div class='feature-box'>
-    <h3 class='feature-title'>Recyclable Packaging</h3>
-    <i class="fa fa-recycle" aria-hidden="true"></i>
+    <div class='feature-box col2'>
+      <i class="fa fa-recycle fa-3x icon" aria-hidden="true"></i>
+    <h4 class='feature-title'>Recyclable Packaging</h4>
     <p> To ensure your ingredients stay fresh and helps our Earth too!</p>
     </div>
 
-    <div class='feature-box'>
-    <h3 class='feature-title'>No Commitment</h3>
-    <i class="fa fa-calendar-times-o" aria-hidden="true"></i>
+    <div class='feature-box col3'>
+      <i class="fa fa-calendar-times-o fa-3x icon" aria-hidden="true"></i>
+    <h4 class='feature-title'>No Commitment</h4>
     <p>Cancel anytime with no fee</p>
     </div>
+  </section>
+
+
+ <!-- options -->
+<section class='option-section'>
+<div class= 'carousel-container'>
+  <i class="fa fa-arrow-right right" aria-hidden="true" onclick="nextSlide(1)"></i>
+  <i class="fa fa-arrow-left left" aria-hidden="true" onclick="nextSlide(-1)"></i>
+
+  <h1 class='option-header'>You Name It, We Got It.</h1>  
+
+
+  <div class='item fade'>
+    <img class='option-image' src="images/brownie.jpg"> 
+    <div class='subtitle'>
+<p>Fresh! </p>
+</div>
 </div>
 
-
-<!-- options-->
-<h1 class='option-header'>You Name It, We Got It.</h1>
-<div class='option-menu'>
-    <div class='item'>
-            <img class='option-image' src="images/chocochip.jpg"> 
+    <div class='item fade'>
+            <img class='option-image' src="images/choco-chip.jpg"> 
             <div class='subtitle'>
-        <p>Guilt-free Chocolate Chip Cookies! </p>
+        <p>Guilt-free! </p>
     </div>
     </div>
 
-       <div class='item'>
+       <div class='item fade'>
         <img class='option-image' src="images/cranberryorange.jpg">
         <div class='subtitle'>
-        <p>Get in my belly Cranberry Orange Scones! </p>
+        <p>Vegan! </p>
        </div>
       </div>
 
-      <div class='item'>
+      <div class='item fade'>
         <img class='option-image' src="images/cinnamonroll.jpg">
         <div class='subtitle'>
-        <p>Yummy in my Tummy Cinnamon Rolls! </p>
+        <p>Dairy-free! </p>
        </div>
       </div>
 
-    </div> 
+      <div class='item fade'>
+        <img class='option-image' src="images/rasp-tart.jpg">
+        <div class='subtitle'>
+        <p>Kid-Approved! </p>
+       </div>
+      </div>
+
+      <div class='item fade'>
+    <img class='option-image' src="images/fruit-tart.jpg"> 
+        <div class='subtitle'>
+        <p>Yummy! </p>
+       </div>
+      </div>
+
+    </div>
+  </div>
 
 
 
-<!-- call to action -->
-<section class="colored-section" id="cta">
-    <div class='sub-section'>
     
-        <h3>Satisfy Your Love For Sweets Today!</h3>
+  </div>
+    </section> 
+
+
+
+
+
+
+
+    <!-- call to action -->
+
+    <section class='sub-section'>
+    
+        <h3 class='action-header'>Satisfy Your Love For Sweets Today!</h3>
         <button type="button" class="btn btn-light">Subscribe!</button>
   
-    </div>
-      </section>
+    </section>
+    
 
 
-
-
+  
+  </div>
 <!-- footer -->
 
-<div class="footer">
-    <div class= "">
+<section class="footer">
+    <div class= "medias">
   
         <i class="social-medias fab fa-twitter-square fa-2px"></i>
         <i class="social-medias fab fa-instagram fa-2px"></i>
@@ -118,10 +160,14 @@
   </div>
       <p>© Copyright 2020 sweettreats</p>
   
-  </div>
+</section>
 
 
 
 
+<script src='app.js'></script>
+<!---Bootstrap Scripts-->
+<script src= 'bootstrap-4.5.0-dist/css/bootstrap-grid.css'></script>
+<script src='bootstrap-4.5.0-dist/js/bootstrap.bundle.js>'
 </body>
 </html>
