@@ -21,9 +21,9 @@
        
           <li><a href='#footer'>Contact</a></li>
             
-           <li><a href='#options'>Menu</a></li> 
+           <li><a href='#option-section'>Menu</a></li> 
       
-            <li><a href='#pricing'>Pricing</a></li>
+            <li><a href='#sub-section'>Subscribe</a></li>
 
      
        
@@ -69,87 +69,58 @@
 
 
  <!-- options -->
-<section class='option-section'>
-<div class= 'carousel-container'>
-  <i class="fa fa-arrow-right right" aria-hidden="true" onclick="nextSlide(1)"></i>
-  <i class="fa fa-arrow-left left" aria-hidden="true" onclick="nextSlide(-1)"></i>
+ <div class="slideshow-container">
 
-  <h1 class='option-header'>You Name It, We Got It.</h1>  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img class='option-img' src="images/brownie.jpg">
+    <div class="text">Gluten-Free!</div>
+  </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img class='option-img' src="images/choco-chip.jpg">
+    <div class="text">Vegan Options!</div>
+  </div>
 
-  <div class='item fade'>
-    <img class='option-image' src="images/brownie.jpg"> 
-    <div class='subtitle'>
-<p>Fresh! </p>
-</div>
-</div>
-
-    <div class='item fade'>
-            <img class='option-image' src="images/choco-chip.jpg"> 
-            <div class='subtitle'>
-        <p>Guilt-free! </p>
-    </div>
-    </div>
-
-       <div class='item fade'>
-        <img class='option-image' src="images/cranberryorange.jpg">
-        <div class='subtitle'>
-        <p>Vegan! </p>
-       </div>
-      </div>
-
-      <div class='item fade'>
-        <img class='option-image' src="images/cinnamonroll.jpg">
-        <div class='subtitle'>
-        <p>Dairy-free! </p>
-       </div>
-      </div>
-
-      <div class='item fade'>
-        <img class='option-image' src="images/rasp-tart.jpg">
-        <div class='subtitle'>
-        <p>Kid-Approved! </p>
-       </div>
-      </div>
-
-      <div class='item fade'>
-    <img class='option-image' src="images/fruit-tart.jpg"> 
-        <div class='subtitle'>
-        <p>Yummy! </p>
-       </div>
-      </div>
-
-    </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img class='option-img' src="images/fruit-tart.jpg">
+    <div class="text">Non-Dairy!</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img class='option-img' src="images/cinnamonroll.jpg">
+    <div class="text">Organic!</div>
   </div>
 
 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-    
-  </div>
-    </section> 
-
-
-
-
-
-
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
 
     <!-- call to action -->
 
-    <section class='sub-section'>
+    <section id='sub-section'>
     
         <h3 class='action-header'>Satisfy Your Love For Sweets Today!</h3>
         <button type="button" class="btn btn-light">Subscribe!</button>
   
     </section>
-    
 
 
-  
-  </div>
 <!-- footer -->
 
-<section class="footer">
+<section id="footer">
     <div class= "medias">
   
         <i class="social-medias fab fa-twitter-square fa-2px"></i>
@@ -168,6 +139,6 @@
 <script src='app.js'></script>
 <!---Bootstrap Scripts-->
 <script src= 'bootstrap-4.5.0-dist/css/bootstrap-grid.css'></script>
-<script src='bootstrap-4.5.0-dist/js/bootstrap.bundle.js>'
+<script src='bootstrap-4.5.0-dist/js/bootstrap.bundle.js>'></script>
 </body>
 </html>
