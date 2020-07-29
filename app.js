@@ -26,3 +26,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+// button for subscription
+
+document.querySelectorAll('.btn').forEach(function (a) {
+    a.addEventListener('click', function(){
+        this.style.backgroundColor= 'pink';
+    })
+});
